@@ -17,4 +17,7 @@ jobs:
           node-version: 20
       - run: echo 'hello world ...'
       - run: ls -la
+      - run: docker build -t adsoft/mysql-restapi .
+      - run: docker images
+
 
